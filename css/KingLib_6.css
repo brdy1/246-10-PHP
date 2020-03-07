@@ -1,0 +1,97 @@
+html {
+	margin-left:6px;
+	margin-right:6px
+}
+
+#logo {
+		top: 5px;
+		left: 5px;
+		width: 800px;
+		margin-left:6px;
+		margin-right:6px;
+}
+
+#register {
+		top: 85px;
+		left: 0px;
+		width: 800px;
+		background-color: none;
+		margin-left:6px;
+		margin-right:6px
+}
+
+#search {
+		top: 85px;
+		left: 0px;
+		width: 800px;
+		margin-left:6px;
+		margin-right:6px
+}
+
+#main {
+	padding-left: 15px;
+	border: 15px;
+	margin-left:6px;
+	margin-right:6px
+}
+
+
+
+body {
+		font-family: Arial, Helvetica, sans-serif;
+		color: black;
+		background-color: #FFFFCC;
+		margin-left:6px;
+		margin-right:6px;
+}
+
+h2 {
+	color: blue;
+}
+
+h2.alpha {
+	color: black;
+	font-size: 18px;
+}
+
+p {
+		font-size: 18px;
+}
+
+div {
+		background-color: lightblue;
+}
+
+table {
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	margin-left:6px;
+	margin-right:6px
+}
+
+th {
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+}
+
+input {
+		font-size: 18px;
+}
+
+form {
+		
+}
+
+.odd {
+	background-color: white;
+}
+
+.even {
+	background-color: #FFFFCC;
+}
+
+.bold {
+		font-weight: bold;
+}

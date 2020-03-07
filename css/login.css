@@ -1,0 +1,49 @@
+body {
+	background-color: darkgray;
+	color: blue;
+}
+
+.main {
+	max-width: 650px;
+}
+
+a:link {
+	color: black;
+}
+
+a:visited {
+	color: #131313;
+}
+
+a:hover {
+	color: red;
+}
+
+a:active {
+	color: yellow;
+}
+
+div.row{
+    display:table-row;
+}
+
+h1 {
+	background-color: lightyellow;
+}
+
+form {
+	text-align: left;
+	align-content: left;
+}
+
+label {
+	color: purple;
+    display: table-cell;
+    text-align: right;
+}
+
+input {
+	display: table-cell;
+	margin-bottom: 5px;
+	width: 250px;
+}

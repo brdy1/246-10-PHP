@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>King Library - Register</title>
+		<link rel="stylesheet" type="text/css" href="css/basic.css">
+	</head>
+
+	<body>
+
+		<div id="logo">
+	 		<img src="images/KingLibLogo.jpg" alt="King Real Estate Logo">
+    	</div>
+
+    	<div id="register">
+    		<p>Please sign up.</p>
+
+			<!-- User enters data into form -->
+			<form method="post" action="assignment_1_add_patron.php">
+				
+				<p>First Name:</p><br>
+				<input type="text" name="firstname" size="20">
+
+				<br><br>
+
+				<p>Last Name:</p><br>
+				<input type="text" name="lastname" size="20">
+
+				<br><br>
+
+				<p>Email:</p><br>
+				<input type="text" name="email" size="25">
+
+				<br><br>
+
+				<p>City of Residence:</p><br>
+				<select name="city" size="1">
+					<option value="none">-</option>
+					<option value="Chicago">Chicago</option>
+					<option value="Detroit">Detroit</option>
+					<option value="Toronto">Toronto</option>
+				</select>
+
+				<br><br>
+
+				<input type="submit" value="Submit">
+
+			</form>
+
+		</div>
+
+	</body>
+
+</html>

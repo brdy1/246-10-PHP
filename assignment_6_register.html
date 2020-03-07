@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>King Library - Register</title>
+		<link rel="stylesheet" type="text/css" href="css/KingLib_6.css">
+	</head>
+
+<!--
+/*****************************************
+File: assignment_6_add_patron.html
+Student: Brady Peneton
+Assignment: 6
+****************************************/
+-->
+
+	<body>
+
+		<div id="logo">
+	 		<img src="images/KingLibLogo.jpg" alt="King Real Estate Logo">
+    	</div>
+
+    	<div id="register">
+    		<p>Please sign up.</p>
+
+			<!-- User enters data into form -->
+			<form method="post" action="assignment_6_add_patron.php">
+				
+				<p>First Name:</p>
+				<input type="text" name="firstname" size="20">
+
+				<br>
+
+				<p>Last Name:</p>
+				<input type="text" name="lastname" size="20">
+
+				<br>
+
+				<p>Email:</p>
+				<input type="text" name="email" size="25">
+
+				<br>
+
+				<p>Birth Year:</p>
+				<input type="text" name="birthyear" size="4">
+
+				<br>
+
+				<p>City of Residence:</p>
+				<select name="city" size="1">
+					<option value="none">-</option>
+					<option value="Chicago">Chicago</option>
+					<option value="Detroit">Detroit</option>
+					<option value="Toronto">Toronto</option>
+				</select>
+
+				<br><br>
+
+				<input type="submit" value="Submit">
+
+			</form>
+
+			<p>For Admin Use Only: <a href="assignment_6_view_patrons.php">View Patrons</a></p>
+		</div>
+
+	</body>
+
+</html>

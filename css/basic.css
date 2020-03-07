@@ -1,0 +1,38 @@
+html {margin:0; padding:0;}
+
+#logo {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 800px;
+}
+
+#register {
+		position: absolute;
+		top: 85px;
+		left: 0px;
+		width: 800px;
+		background-color: #E6E6FA;
+}
+
+body {
+		font-family: Arial, Helvetica, sans-serif;
+		color: purple;
+		background-color: #F0E68C;
+}
+
+p {
+		font-size: 18px;
+}
+
+input {
+		font-size: 18px;
+}
+
+form {
+		background-color: #E6E6FA;
+}
+
+.bold {
+		font-weight: bold;
+}

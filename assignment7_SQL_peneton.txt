@@ -1,0 +1,132 @@
+--------------------------------------------------------------------------------------
+
+
+
+Problem 1. Show the average position that an author appears on a book.
+List the author using the author_id column.
+
+
+
+
+
+
+YOUR ANSWER HERE:
+SELECT author_id, AVG(author_order)
+FROM bookauthor
+GROUP BY author_id
+ORDER BY 2;
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+
+Problem 2. List each author (by lastname and firstname) and the number of books 
+that the author has written.
+
+
+
+
+
+
+YOUR ANSWER HERE:
+SELECT lastname, firstname, COUNT(isbn)
+FROM author
+JOIN bookauthor ON author.author_id=bookauthor.author_id
+GROUP BY lastname, firstname;
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+Problem 3. Display a list of the authors and the city they live in,
+as long as they live in one of the cities that a publisher is based in. 
+
+Use a Subquery instead of a JOIN. 
+
+
+
+
+
+
+
+YOUR ANSWER HERE:
+SELECT lastname, firstname, city
+FROM author
+WHERE city IN
+(SELECT city
+FROM publisher);
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+Problem 4. Show a list of all authors and the books they have 
+written.  However, only display a book if it has the letters 'oo' contained in 
+its title.
+
+Sort in Lastname, firstname order.
+
+
+
+
+
+
+YOUR ANSWER HERE:
+SELECT lastname, firstname, title
+FROM author a
+JOIN bookauthor ba ON a.author_id=ba.author_id
+JOIN book b ON ba.isbn=b.isbn
+WHERE title LIKE ('%oo%')
+ORDER BY lastname;
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+Problem 5. List the publisher name and title for all books, but only if 
+they are published by the publisher whose name begins with 'Bin'.  
+
+Sort by publisher name and title.
+
+
+
+
+
+YOUR ANSWER HERE:
+SELECT name, title
+FROM publisher
+JOIN book ON publisher.pub_id=book.pub_id
+WHERE name LIKE ('Bin%')
+ORDER BY name, title;
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
